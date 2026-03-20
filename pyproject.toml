@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "junit-time-diff"
+version = "0.1.0"
+description = "Compare test execution times from JUnit XML reports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Mauricio Villegas", email = "mauricio@omnius.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+junit-time-diff = "junit_time_diff:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7",
+]
+
+[tool.setuptools]
+py-modules = ["junit_time_diff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E", "W",  # https://pypi.org/project/pycodestyle
+    "F",  # https://pypi.org/project/pyflakes
+    "I",  # https://pypi.org/project/isort
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.black]
+line-length = 120
+
+[tool.typos.default.extend-identifiers]
+Villegas = "Villegas"

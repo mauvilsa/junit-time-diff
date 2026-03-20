@@ -1,0 +1,40 @@
+fail_fast: true
+default_language_version:
+  python: python3.12
+
+repos:
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v6.0.0
+  hooks:
+  - id: check-added-large-files
+  - id: check-ast
+  - id: check-case-conflict
+  - id: check-docstring-first
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+  - id: trailing-whitespace
+    exclude: .bumpversion.cfg
+
+- repo: https://github.com/psf/black
+  rev: 26.1.0
+  hooks:
+  - id: black
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.14.13
+  hooks:
+  - id: ruff
+    args: ["--fix"]
+
+- repo: https://github.com/asottile/yesqa
+  rev: v1.5.0
+  hooks:
+  - id: yesqa
+
+- repo: https://github.com/crate-ci/typos
+  rev: v1.42.1
+  hooks:
+  - id: typos
+    args: []
+    verbose: true

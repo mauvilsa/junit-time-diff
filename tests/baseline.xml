@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites name="pytest tests">
+  <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="9" time="3.742" timestamp="2026-03-20T09:05:07.667755+01:00" hostname="machine">
+    <testcase classname="tests.test_simple" name="test_simple_one" time="0.000"/>
+    <testcase classname="tests.test_simple" name="test_simple_two" time="0.000"/>
+    <testcase classname="tests.test_simple" name="test_simple_three" time="0.000"/>
+    <testcase classname="tests.test_simple" name="test_simple_four" time="0.001"/>
+    <testcase classname="tests.test_simple" name="test_simple_five" time="0.000"/>
+    <testcase classname="tests.test_complex" name="test_complex_one" time="1.527"/>
+    <testcase classname="tests.test_complex" name="test_complex_two" time="0.874"/>
+    <testcase classname="tests.test_complex" name="test_complex_three" time="0.002"/>
+    <testcase classname="tests.test_complex" name="test_complex_four" time="1.108"/>
+  </testsuite>
+</testsuites>
