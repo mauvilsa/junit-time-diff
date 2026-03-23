@@ -26,7 +26,8 @@ junit-time-diff = "junit_time_diff:main"
 
 [project.optional-dependencies]
 test = [
-    "pytest>=7",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
 ]
 
 [tool.setuptools]
