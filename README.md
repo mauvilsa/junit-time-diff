@@ -1,6 +1,6 @@
-# junit_time_diff
+# junit-time-diff
 
-`junit_time_diff` compares test execution times from JUnit XML reports and highlights meaningful slowdowns, speedups, new tests, and removed tests.
+`junit-time-diff` compares test execution times from JUnit XML reports and highlights meaningful slowdowns, speedups, new tests, and removed tests.
 
 It works especially well with pytest's built-in `--junit-xml` output and can compare either single runs or averages computed from multiple XML files.
 
