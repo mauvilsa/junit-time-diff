@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "junit-time-diff"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Compare test execution times from JUnit XML reports."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -32,6 +32,10 @@ test = [
 
 [tool.setuptools]
 py-modules = ["junit_time_diff"]
+
+# Single source of truth for the version, so that bumpversion only needs to edit the module.
+[tool.setuptools.dynamic]
+version = { attr = "junit_time_diff.__version__" }
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
