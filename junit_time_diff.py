@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 # Percentage by which the common-test total must grow before the run is considered a regression.
 DEFAULT_OVERALL_THRESHOLD = 5.0
